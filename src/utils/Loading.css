@@ -1,0 +1,37 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* or any color overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .loader-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7; /* adjust as needed */
+  }
+  
+  .loader-text {
+    color: white;
+    font-size: 2rem;
+    z-index: 10;
+    font-weight: bold;
+    animation: fadein 2s ease-in-out infinite;
+  }
+  
+  @keyframes fadein {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+  

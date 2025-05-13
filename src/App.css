@@ -1,0 +1,44 @@
+.app{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+/* scrolltriggered */
+.my-component{
+    /* width:100%;
+    height:100vh; */
+    color: #343A40;
+    /* display:flex;
+    justify-content:center;
+    align-items:center; */
+}
+
+.sliding-paws-container {
+  flex: 1 1 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.paws-track {
+  display: flex;
+  width: max-content;
+  animation: slidePaws 18s linear infinite;
+}
+
+.paw-img {
+  height: 220px;
+  margin: 0 20px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+@keyframes slidePaws {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
